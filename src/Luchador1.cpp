@@ -30,16 +30,16 @@ int main(int argc, char const *argv[])
             // salir del juego
             break;
         if(key == 'a' || key == KEY_LEFT){
-            vaca1->DesplazarIzquierda();
+            fighter1->DesplazarIzquierda();
         }
         if(key == 'd' || key == KEY_RIGHT){
-            vaca1->DesplazarDerecha();
+            fighter1->DesplazarDerecha();
         }
         if(key == 'w'||key ==KEY_UP){
-            arma->DesplazarArriba();
+            fighter1->DesplazarArriba();
         }
          if(key == 's'||key ==KEY_DOWN){
-            bala->DesplazarAbajo();
+            fighter1->DesplazarAbajo();
         }
         ventana.Actualizar(actualizables);
         ventana.Dibujar(dibujos);

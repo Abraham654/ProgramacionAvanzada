@@ -1,13 +1,5 @@
-CXX	= x86_64-w64-mingw32-g++
-CXX	= Linux C++
+bin/Luchador1 : src/Luchador1.cpp include/*
+	c++	src/Luchador1.cpp -o	bin/Luchador1 -lcurses	-I include
 
-br : clean compilar ejecutar
-
-compilar: src/main.cpp
-	$(CXX) src/main.cpp -o bin/mascotas -I include
-
-ejecutar: bin/mascotas
-	./bin/mascotas
-
-clean: bin/mascotas
-	rm bin/mascotas
+run : bin/Luchador1
+	./bin/Luchador1
