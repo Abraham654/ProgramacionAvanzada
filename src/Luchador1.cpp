@@ -6,34 +6,22 @@
 #include <unistd.h>
 #include <Ventana.hpp>
 #include <Fighter1.hpp>
-#include <Bala.hpp>
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
 
     Ventana ventana;
-    Vaca* vaca1 = new Vaca(0, 0);
-    Vaca* vaca2 = new Vaca(100, 0);
-    Vaca* vaca3 = new Vaca(50, 50);
-    Arma* arma = new Arma();
-    Bala* bala = new Bala(0,0);
+    Fighter1* fighter1 = new Fighter1(0, 0);
 
-
-    vaca1->RecogerArma(arma);
 
     list<Dibujo*> dibujos;
-    dibujos.push_back(vaca1);
-    dibujos.push_back(vaca2);
-    dibujos.push_back(vaca3);
-    dibujos.push_back(arma);
-    dibujos.push_back(bala);
+    dibujos.push_back(fighter1);
+    
 
     list<Actualizable*>actualizables;
-    actualizables.push_back(vaca1);
-    actualizables.push_back(vaca2);
-    actualizables.push_back(vaca3);
-    actualizables.push_back(bala);
+    actualizables.push_back(fighter1);
+    
 
     while (true)
     {

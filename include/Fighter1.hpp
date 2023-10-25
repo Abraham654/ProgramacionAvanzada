@@ -1,12 +1,11 @@
 #pragma once
 #include <Dibujo.hpp>
 #include<Actualizable.hpp>
-#include<Arma.hpp>
 using namespace std;
 class Fighter1 : public Dibujo, public Actualizable
 {
 private:
-    Arma* arma;
+    
 public:
     Fighter1() : Dibujo("ScorpionNormal")
     {
