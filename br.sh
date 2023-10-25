@@ -1,0 +1,3 @@
+./compilar.sh
+./ejecutar.sh
+

@@ -1,0 +1,134 @@
+class MortalKombat
+class Luchador{
+    +Golpe()
+    +GolpeFuerte()
+    +Patada()
+    +PatadaFuerte()
+    +BloqueoMedio()
+    +BloqueoAlto()
+    +BloqueoBajo()
+    }
+class Escenario
+class Mapadepelea
+class Menu 
+class Historia
+class PantallaDividida
+class CombateOnline
+class Videojuego
+class Barradevida
+class Temporizador
+class PeleaLibre
+class EscapeRapido
+class Elementodanino
+class Tamanofijo
+class Zonadecombate
+class Jugador
+class Marcadorderounds
+class Barradeenergia
+class Golpe
+class Patada
+class Combo 
+class Fatality
+class Scorpion 
+class SubZero
+class KungLao
+class JohnyCage
+class JaxBrigs
+class SonyaBlade
+class LiuKang
+class Raiden
+class KotalKahn
+class NoobSaibot
+class Geras 
+class Kano 
+class Baraka
+class ShaoKahn
+class Mileena
+class ShangTsung
+class JacquiBriggs
+class Goro 
+class Kabal
+class Dvorah
+class Kitana
+class CassieCage
+class ErronBlack
+class Ermac
+class Skarlet
+class Nitara
+class Sindel 
+class Reptile
+class Predator
+class Alien 
+class Robocop
+class Rambo 
+class T800
+class Omniman
+class Homelander
+class Joker
+class BatmanWhoLaughs
+class Cinematica
+MortalKombat*--Menu
+Menu*--Historia
+Menu*--PeleaLibre
+Historia*--Pelea
+Historia*--Cinematica
+PeleaLibre*--Pelea
+CombateOnline*--Pelea
+Menu*--CombateOnline
+Escenario*-- Luchador
+Escenario*-- Temporizador
+Escenario *-- Tamanofijo
+Escenario<|--Zonadecombate
+Escenario*--EscapeRapido
+Escenario*--Elementodanino
+Escenario*--Mapadepelea
+Escenario*--Marcadorderounds
+Luchador*--Barradevida
+Luchador*--Barradeenergia
+Luchador*--Golpe
+Luchador*--Patada
+Luchador*--Combo
+Luchador*--Fatality
+Videojuego<|--MortalKombat
+MortalKombat<|--Pelea
+Escenario*--Temporizador
+Pelea<|--Escenario
+Jugador o--Videojuego
+Menu*--PantallaDividida
+Luchador o-- Scorpion
+Luchador o-- SubZero
+Luchador o-- KungLao
+Luchador o-- JohnyCage
+Luchador o-- JaxBrigs
+Luchador o-- SonyaBlade
+Luchador o-- LiuKang
+Luchador o-- Raiden
+Luchador o-- KotalKahn
+Luchador o-- NoobSaibot
+Luchador o-- Geras
+Luchador o-- Kano
+Luchador o-- Baraka
+Luchador o-- ShaoKahn
+Luchador o-- Mileena
+Luchador o-- ShangTsung
+Luchador o-- JacquiBriggs
+Luchador o-- Goro
+Luchador o-- Kabal
+Luchador o-- Dvorah
+Luchador o-- Kitana
+Luchador o-- CassieCage
+Luchador o-- ErronBlack
+Luchador o-- Ermac
+Luchador o-- Skarlet
+Luchador o-- Nitara
+Luchador o-- Sindel
+Luchador o-- Reptile
+Luchador o-- Predator
+Luchador o-- Alien
+Luchador o-- Robocop
+Luchador o-- Rambo 
+Luchador o-- T800
+Luchador o-- Omniman
+Luchador o-- Homelander 
+Luchador o-- Joker
+Luchador o-- BatmanWhoLaughs
