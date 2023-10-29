@@ -1,16 +1,16 @@
 #pragma once
 #include <Dibujo.hpp>
-#include<Actualizable.hpp>
+#include <Actualizable.hpp>
 using namespace std;
 class Fighter1 : public Dibujo, public Actualizable
 {
 private:
     
 public:
-    Fighter1() : Dibujo("ScorpionNormal")
+    Fighter1() : Dibujo("SubZeroNormal")
     {
     }
-    Fighter1(int x, int y) : Dibujo(x,y,"ScorpionNormal"){
+    Fighter1(int x, int y) : Dibujo(x,y,"SubZeroNormal"){
 
     }
     void Actualizar()

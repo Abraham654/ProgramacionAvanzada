@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
 {
 
     Ventana ventana;
-    Fighter1* fighter1 = new Fighter1(0, 0);
+    Fighter1* fighter1 = new Fighter1(60, 60);
 
 
     list<Dibujo*> dibujos;
